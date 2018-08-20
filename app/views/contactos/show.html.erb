@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @contacto.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @contacto.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @contacto.phone %>
+</p>
+
+<p>
+  <strong>Service type:</strong>
+  <%= @contacto.service_type %>
+</p>
+
+<p>
+  <strong>Stage:</strong>
+  <%= @contacto.stage %>
+</p>
+
+<p>
+  <strong>Budget:</strong>
+  <%= @contacto.budget %>
+</p>
+
+<p>
+  <strong>Timeframe:</strong>
+  <%= @contacto.timeframe %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @contacto.start %>
+</p>
+
+<%= link_to 'Edit', edit_contacto_path(@contacto) %> |
+<%= link_to 'Back', contactos_path %>
