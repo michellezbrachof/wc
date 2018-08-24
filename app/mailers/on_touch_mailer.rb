@@ -1,0 +1,2 @@
+class OnTouchMailer < ApplicationMailer
+end

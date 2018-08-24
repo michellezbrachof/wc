@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @on_touch_user.name %>
+</p>
+
+<p>
+  <strong>Prefix:</strong>
+  <%= @on_touch_user.prefix %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @on_touch_user.email %>
+</p>
+
+<%= link_to 'Edit', edit_on_touch_user_path(@on_touch_user) %> |
+<%= link_to 'Back', on_touch_users_path %>

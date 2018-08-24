@@ -1,0 +1,2 @@
+class OnTouchUser < ApplicationRecord
+end

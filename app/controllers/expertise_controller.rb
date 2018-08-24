@@ -1,0 +1,2 @@
+class ExpertiseController < ApplicationController
+end

@@ -1,0 +1,32 @@
+<%= form_with(model: on_touch_user, local: true) do |form| %>
+  <% if on_touch_user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(on_touch_user.errors.count, "error") %> prohibited this on_touch_user from being saved:</h2>
+
+      <ul>
+      <% on_touch_user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prefix %>
+    <%= form.text_field :prefix %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
