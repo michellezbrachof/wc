@@ -76,3 +76,23 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
+$(document).ready(function(){
+  $('#map').vectorMap({
+    map: 'world_mill',
+    scaleColors: ['#C8EEFF', '#0071A4'],
+    normalizeFunction: 'polynomial',
+    hoverOpacity: 0.7,
+    hoverColor: false,
+    markerStyle: {
+      initial: {
+        fill: 'RED',
+        stroke: '#383f47'
+      }
+    },
+    backgroundColor: '#383f47',
+    markers: [
+      {latLng: [19, -70.2], name: 'Dominican Republic'},
+      {latLng: [8, -64.38], name: 'Venezuela'}
+    ]
+  });
+  });
