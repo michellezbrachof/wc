@@ -18,6 +18,10 @@
 //= require popper
 //= require bootstrap
 
+$(function () {
+  $('[data-toggle="popover"]').popover(
+    {animation: true})
+});
 
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -76,7 +80,9 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
+
 $(document).ready(function(){
+
   $('#map').vectorMap({
     map: 'world_mill',
     scaleColors: ['#C8EEFF', '#0071A4'],
@@ -95,4 +101,6 @@ $(document).ready(function(){
       {latLng: [8, -64.38], name: 'Venezuela'}
     ]
   });
-  });
+
+
+});
